@@ -2,9 +2,7 @@ buildscript {
 
     repositories {
         mavenLocal()
-        maven{
-            url "http://artifactory.nm.flipkart.com:8081/artifactory/libs-releases"
-        }
+        mavenCentral()
         maven {
             url 'http://repo.jenkins-ci.org/releases/'
         }
@@ -22,9 +20,9 @@ buildscript {
 }
 
 repositories {
-    maven{
-        url "http://artifactory.nm.flipkart.com:8081/artifactory/libs-releases"
-    }
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-release-remote/com/readytalk/metrics3-statsd/4.1.2/" }
+    maven { url "https://repo.spring.io/libs-snapshot" }
 }
 
 apply plugin: 'spring-boot'
@@ -93,7 +91,7 @@ dependencies {
     compile("io.dropwizard.metrics:metrics-jetty9:$dropWizardMetricsVersion")
     compile("io.dropwizard.metrics:metrics-logback:$dropWizardMetricsVersion")
     compile("com.ryantenney.metrics:metrics-spring:$dropWizardMetricsVersion")
-    compile('com.readytalk:metrics3-statsd:4.1.0')
+    compile('com.readytalk:metrics3-statsd:4.1.2')
     
     compile("org.glassfish.jersey.ext:jersey-bean-validation:2.22.1")
     
