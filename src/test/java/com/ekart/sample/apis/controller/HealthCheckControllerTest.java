@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.controller;
+package com.sub.sample.apis.controller;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.unitils.reflectionassert.ReflectionAssert.*;
@@ -13,14 +13,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import com.codahale.metrics.health.HealthCheck.Result;
-import com.ekart.sample.apis.controller.HealthCheckController;
-import com.ekart.sample.apis.dtos.health.ElbHealthCheckResponse;
-import com.ekart.sample.apis.dtos.health.HealthCheckResponse;
-import com.ekart.sample.apis.dtos.health.HealthStatus;
-import com.ekart.sample.apis.dtos.health.VipConfiguration;
-import com.ekart.sample.apis.dtos.health.VipStatus;
-import com.ekart.sample.apis.health.MasterHealthCheck;
-import com.ekart.sample.apis.metrics.ElbStatisticsCollector;
+import com.sub.sample.apis.controller.HealthCheckController;
+import com.sub.sample.apis.dtos.health.ElbHealthCheckResponse;
+import com.sub.sample.apis.dtos.health.HealthCheckResponse;
+import com.sub.sample.apis.dtos.health.HealthStatus;
+import com.sub.sample.apis.dtos.health.VipConfiguration;
+import com.sub.sample.apis.dtos.health.VipStatus;
+import com.sub.sample.apis.health.MasterHealthCheck;
+import com.sub.sample.apis.metrics.ElbStatisticsCollector;
 import com.google.common.collect.ImmutableMap;
 
 import static org.mockito.Mockito.*;

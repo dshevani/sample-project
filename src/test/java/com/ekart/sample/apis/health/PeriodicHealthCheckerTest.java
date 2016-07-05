@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.health;
+package com.sub.sample.apis.health;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -13,7 +13,7 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.codahale.metrics.health.HealthCheck.Result;
-import com.ekart.sample.apis.health.PeriodicHealthChecker;
+import com.sub.sample.apis.health.PeriodicHealthChecker;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import com.google.common.collect.ImmutableSortedMap;
 

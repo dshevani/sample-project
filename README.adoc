@@ -11,7 +11,7 @@ There are a number of improvements possible. The ideal goal is to have this akin
 If you find any other bugs, raise a pull request!
 
 == Take a Test Drive
-With ekart-starter-kit as the root folder, run
+With sub-starter-kit as the root folder, run
 [source,bash]
 ----
 ./gradlew generateCode -PtemplateProject=spring-boot-jetty -PsourceDir=/tmp/yourDir -PparametersFile=examples/code/spring-boot-jetty.yml
@@ -19,7 +19,7 @@ With ekart-starter-kit as the root folder, run
 
 == Convention
 All your controllers/service-related code is present under the apis package. Your actual business logic is present under the service package.
-Ex: com.ekart.wms.rules.apis.controllers, com.ekart.wms.rules.service.drools
+Ex: com.sub.wms.rules.apis.controllers, com.sub.wms.rules.service.drools
 
 == Gradle Tasks
 Run "*gradle tasks*" to get a complete list of available tasks.
@@ -38,7 +38,7 @@ Run "*gradle tasks*" to get a complete list of available tasks.
 ** netrcFile - Mandatory. The path of the netrc file from which the FTP credentials of the target repos have to be read from
 
 == Sample Jenkins Pipeline
-link:https://ekart-jenkins-master.nm.company.com:8080/job/facp/job/facp-balance-bucket/view/facp-balance-bucket-pipeline/[]
+link:https://sub-jenkins-master.nm.company.com:8080/job/facp/job/facp-balance-bucket/view/facp-balance-bucket-pipeline/[]
   
 == Tools Integration
 You get integration with findbugs, checkstyle and cobertura out of the box. Run "*gradle tasks*" to know about the actual commands.
@@ -69,7 +69,7 @@ The current implementation of the Healthcheck controller uses Jetty statistics t
 
 Also, Dropwizard healthchecks are used. You can add more health checks based on the components you need to monitor.
 
-Note: See link:src/main/java/com/ekart/sample/apis/metrics/ElbStatisticsCollector.java[] for details how ELB health check statistics are calculated
+Note: See link:src/main/java/com/sub/sample/apis/metrics/ElbStatisticsCollector.java[] for details how ELB health check statistics are calculated
 
 == Zipkin Integration
 It used spring-cloud-sleuth-zipkin to generate trace and span IDs for all API requests, scheduled jobs, etc. The trace and span IDs are dumped in the log files. The Zipkin collector endpoints can be configured in application.yml. On a local box, they are dumped to the logs itself.

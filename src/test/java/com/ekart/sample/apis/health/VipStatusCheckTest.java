@@ -1,10 +1,10 @@
-package com.ekart.sample.apis.health;
+package com.sub.sample.apis.health;
 
 import org.junit.Test;
 
 import com.codahale.metrics.health.HealthCheck.Result;
-import com.ekart.sample.apis.dtos.health.VipStatus;
-import com.ekart.sample.apis.health.VipStatusCheck;
+import com.sub.sample.apis.dtos.health.VipStatus;
+import com.sub.sample.apis.health.VipStatusCheck;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;

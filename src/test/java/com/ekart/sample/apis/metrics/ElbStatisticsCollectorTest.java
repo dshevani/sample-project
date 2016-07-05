@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.metrics;
+package com.sub.sample.apis.metrics;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.ekart.sample.apis.metrics.ElbStatisticsCollector;
+import com.sub.sample.apis.metrics.ElbStatisticsCollector;
 
 import static org.mockito.Mockito.*;
 

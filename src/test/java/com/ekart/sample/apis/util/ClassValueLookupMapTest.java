@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.util;
+package com.sub.sample.apis.util;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -10,7 +10,7 @@ import javax.validation.ValidationException;
 
 import org.junit.Test;
 
-import com.ekart.sample.apis.util.ClassValueLookupMap;
+import com.sub.sample.apis.util.ClassValueLookupMap;
 import com.google.common.collect.ImmutableMap;
 
 /**

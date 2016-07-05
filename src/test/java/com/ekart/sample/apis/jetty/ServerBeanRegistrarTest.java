@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.jetty;
+package com.sub.sample.apis.jetty;
 
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.ekart.sample.apis.jetty.AggregatedLifeCycleListener;
-import com.ekart.sample.apis.jetty.ServerBeanRegistrar;
+import com.sub.sample.apis.jetty.AggregatedLifeCycleListener;
+import com.sub.sample.apis.jetty.ServerBeanRegistrar;
 
 import static org.mockito.Mockito.*;
 

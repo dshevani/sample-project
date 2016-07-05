@@ -13,7 +13,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/Flipkart/ekart-starter-kit.git</url>
+                    <url>https://github.com/Flipkart/sub-starter-kit.git</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>

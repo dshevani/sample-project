@@ -1,11 +1,11 @@
-package com.ekart.sample.apis.dtos.health;
+package com.sub.sample.apis.dtos.health;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 import org.junit.Test;
 
-import com.ekart.sample.apis.dtos.health.HealthStatus;
+import com.sub.sample.apis.dtos.health.HealthStatus;
 
 /**
  * @author vijay.daniel

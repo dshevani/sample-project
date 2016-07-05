@@ -1,1 +1,1 @@
-systemProp.sonar.host.url=http://ekart-sonarqube.nm.company.com:9000
+systemProp.sonar.host.url=http://sub-sonarqube.nm.company.com:9000

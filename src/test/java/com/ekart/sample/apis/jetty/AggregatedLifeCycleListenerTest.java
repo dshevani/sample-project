@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.jetty;
+package com.sub.sample.apis.jetty;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -11,9 +11,9 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.codahale.metrics.health.HealthCheck.Result;
-import com.ekart.sample.apis.dtos.health.VipStatus;
-import com.ekart.sample.apis.health.MasterHealthCheck;
-import com.ekart.sample.apis.jetty.AggregatedLifeCycleListener;
+import com.sub.sample.apis.dtos.health.VipStatus;
+import com.sub.sample.apis.health.MasterHealthCheck;
+import com.sub.sample.apis.jetty.AggregatedLifeCycleListener;
 import com.google.common.collect.ImmutableMap;
 
 import static org.mockito.Mockito.*;

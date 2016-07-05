@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.jetty;
+package com.sub.sample.apis.jetty;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.Matchers.*;

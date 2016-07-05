@@ -1,4 +1,4 @@
-package com.ekart.sample.apis.controller;
+package com.sub.sample.apis.controller;
 
 import static org.unitils.reflectionassert.ReflectionAssert.*;
 
@@ -17,7 +17,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
-import com.ekart.sample.apis.dtos.ErrorMessage;
+import com.sub.sample.apis.dtos.ErrorMessage;
 import com.google.common.collect.Lists;
 
 import static org.mockito.Mockito.*;;

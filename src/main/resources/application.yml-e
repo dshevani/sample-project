@@ -50,4 +50,4 @@ periodicHealthCheck:
   
 logging:
   level:
-    com.ekart.sample: DEBUG
+    com.sub.sample: DEBUG

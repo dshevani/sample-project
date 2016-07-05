@@ -59,11 +59,11 @@ jacocoTestReport {
         classDirectories = files(classDirectories.files.collect {
             fileTree(dir: it, exclude: [
                 '**/*Exception.class',
-                '**/com/ekart/sample/apis/config/spring/*.class',
-                '**/com/ekart/sample/apis/dtos/*.class',
-                '**/com/ekart/sample/apis/dtos/health/*.class',
-                '**/com/ekart/sample/apis/jetty/CustomJetty*.class',
-                '**/com/ekart/sample/apis/Application.class'
+                '**/com/sub/sample/apis/config/spring/*.class',
+                '**/com/sub/sample/apis/dtos/*.class',
+                '**/com/sub/sample/apis/dtos/health/*.class',
+                '**/com/sub/sample/apis/jetty/CustomJetty*.class',
+                '**/com/sub/sample/apis/Application.class'
             ])
         })
     }
@@ -83,7 +83,7 @@ apply plugin: 'org.sonarqube'
 
 sonarqube {
     properties{
-        property "sonar.projectKey","com.ekart:$project.name"
+        property "sonar.projectKey","com.sub:$project.name"
         property "sonar.projectName",project.name
         property "sonar.java.coveragePlugin","jacoco"
         property "sonar.groovy.jacoco.reportPath","${buildDir}/jacoco/jacocoTest.exec"
@@ -91,6 +91,6 @@ sonarqube {
         property "sonar.java.test.binaries","build/classes/test"
         property "sonar.sources","src/main"
         property "sonar.tests","src/test"
-        property "sonar.exclusions", "**/com/ekart/sample/apis/jetty/CustomJetty*"
+        property "sonar.exclusions", "**/com/sub/sample/apis/jetty/CustomJetty*"
     }
 }
